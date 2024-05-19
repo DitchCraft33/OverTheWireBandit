@@ -1,12 +1,12 @@
-# CTF Journeys , First Stop the Kanto Region ( OverTheWire ... Original ... Bandit Country )
-# As Below ... IOT Establish a Solid Foundation , Explore Concepts and Build on Skill Sets
-# More of a Personal Notes ... as Opposed to a Walk Through ... My Terminal'ology may Differ
+ CTF Journeys , First Stop the Kanto Region ( OverTheWire ... Original ... Bandit Country )
+ As Below ... IOT Establish a Solid Foundation , Explore Concepts and Build on Skill Sets
+ More of a Personal Notes ... as Opposed to a Walk Through ... My Terminal'ology may Differ
 
-# For Reference I have Used the MarkDown Language for Highlighting / Formatting / Github
-# Clear / Blank Lines will be Used For Spacing / Allowing for Easier Reading / Look Back 
-# As Generally Follows ... Hashes will be used For Level Headings / Eye Catchers / ALTs
+ For Reference I have Used the MarkDown Language for Highlighting / Formatting / Github
+ Clear / Blank Lines will be Used For Spacing / Allowing for Easier Reading / Look Back 
+ As Generally Follows ... Hashes will be used For Level Headings / Eye Catchers / ALTs
 
-# [ Commands ]    -  will be in Square Brackets
+  [ Commands ]    -  will be in Square Brackets
   Clear Text      -  will be in for Goals / Notes
 > Terminal Output -  will be in shown > prefixed
  
@@ -433,7 +433,7 @@ Instead of using *Concatenate* base64 can Pull ( <<< ) From a String ...
 > The password is DC33...R..E..D..A..C..T..E..D...
 
 
-# --------------------------------- ALT ---------------------------------
+## --------------------------------- ALT ---------------------------------
 
 
 [ python3 -m base64 -d <<< VGhlIHBhc3N3b3JkIGlzIDZ6UGV6aUxkUjJSS05kTllGTmI2blZDS3pwaGxYSEJNCg== ]
@@ -485,7 +485,7 @@ The BaseLine Command Syntax looks like the Following : tr 'Old_Chars' 'New_Chars
 DC33...R..E..D..A..C..T..E..D...
 
 
-# --------------------------------- ALT ---------------------------------
+## --------------------------------- ALT ---------------------------------
 
 
 [ ls , cat data.txt ]
@@ -923,13 +923,13 @@ More Detail chmod - https://www.multacom.com/faq/password_protection/file_permis
 
 
 
-## -------------------------------------------------------------------------------- ##
+## -------------------------------------------------------------------------------- 
 
    Similar Objective / GoodToKnow , Same Network , nN SSH ( no SCP ) , Python Alt :
 
  [ python3 -m http.server 1337 ] ... [ wget 127.0.0.1/home/bandit13/sshkey.private ]
 
-## -------------------------------------------------------------------------------- ##
+## -------------------------------------------------------------------------------- 
 
 
 
@@ -955,7 +955,7 @@ On many computers , localhost is an alias for the IP address 127.0.0.1  ...
 When a computer pings this IP address , it is communicating with itself ...
 
 
-## -------------------------------------------------------------------------------- ##
+## -------------------------------------------------------------------------------- 
 
 Netcat - ( As a Standard Deserves its OWN Write Up ... Git W/O ... ) 
        - Abbreviated Here by the Command ' nc ' , ' nc ' Essensially
@@ -966,7 +966,7 @@ Netcat - ( As a Standard Deserves its OWN Write Up ... Git W/O ... )
 
 ((( [ nc -ul -p 1337 ] ... [ echo "test" | nc -u 127.0.0.1 1337 ] )))
 
-## -------------------------------------------------------------------------------- ##
+## -------------------------------------------------------------------------------- 
 
 
 [ nc localhost 30000 , DC33...R..E..D..A..C..T..E..D... ]
@@ -1052,7 +1052,7 @@ openssl s_client - simple client that connects to a server using SSL/TLS.
 > Correct!
 > DC33...R..E..D..A..C..T..E..D...
 
--------------------------------- ALT ---------------------------------
+## -------------------------------- ALT ---------------------------------
 
 [ echo 'DC33...R..E..D..A..C..T..E..D...' | openssl s_client -connect localhost:30001 -ign_eof ]
 
@@ -1337,7 +1337,7 @@ By Adding Commands ... AFTER the Common SSH Expression .
 DC33...R..E..D..A..C..T..E..D...
 
 
-# --------------------------------- ALT ---------------------------------
+## --------------------------------- ALT ---------------------------------
 
 
 [ ssh bandit18@bandit.labs.overthewire.org -p 2220 /bin/bash ] 
@@ -1698,7 +1698,7 @@ DC33...R..E..D..A..C..T..E..D...
 
 
 
-### bandit 24
+## bandit 24
 
 Level Goal :
 
@@ -1786,7 +1786,7 @@ The Deamon is Instructed to Close Connection AFTER the Correct Pin is Entered ..
 
 [ cat flag.txt | head ]
 
-> I am the pincode checker for user bandit25. Please enter the password for user bandit24 and the secret pincode on a single line,    > separated by a space.
+> I am the pincode checker for user bandit25. Please enter the password for user bandit24 and the secret pincode on a single line,   > separated by a space.
 > Wrong! Please enter the correct pincode. Try again.
 > Wrong! Please enter the correct pincode. Try again.
 > Wrong! Please enter the correct pincode. Try again.
@@ -1830,7 +1830,7 @@ concatenate | print matching pattern "Wrong!" | WordCount until the Line changes
 DC33...R..E..D..A..C..T..E..D...
 
 
-# --------------------------------- ALT ---------------------------------
+## --------------------------------- ALT ---------------------------------
 
 
 ## bandit 24 Python Flava
@@ -1867,7 +1867,7 @@ DC33...R..E..D..A..C..T..E..D...
 
 
 
-# bandit 25
+## bandit 25
 
 Level Goal :
 
@@ -2052,7 +2052,7 @@ E/O bottom left of Terminal ... --More-- (33%)
 > DC33...R..E..D..A..C..T..E..D...
 
 
-# --------------- ALT /// Break Out and Into a Bash Shell -------------------
+## --------------- ALT /// Break Out and Into a Bash Shell -------------------
 
 
 [ v ] ( IOT enter Vim Editor ) , [ :set shell=/bin/bash ] ( Changes Shell via Vim ) , [ :shell ] ( IOT use the Bash Shell ) 
@@ -2070,27 +2070,27 @@ DC33...R..E..D..A..C..T..E..D...
 DC33...R..E..D..A..C..T..E..D...
 
 
-## -------------------------------------------------------------------------------- ##
-## -------------------------------------------------------------------------------- ##
-## -------------------------------------------------------------------------------- ##
+## -------------------------------------------------------------------------------- 
+## -------------------------------------------------------------------------------- 
+## -------------------------------------------------------------------------------- 
 
-## ---------------------------------      TBC      ---------------------------------##
+## ---------------------------------      TBC      --------------------------------
 
-## -------------------------------------------------------------------------------- ##
-## -------------------------------------------------------------------------------- ##
-## -------------------------------------------------------------------------------- ##
+## -------------------------------------------------------------------------------- 
+## -------------------------------------------------------------------------------- 
+## -------------------------------------------------------------------------------- 
 
-## ---------------------------------      B26      ---------------------------------##
+## ---------------------------------      B26      --------------------------------
 
-## -------------------------------------------------------------------------------- ##
-## -------------------------------------------------------------------------------- ##
-## -------------------------------------------------------------------------------- ##
+## -------------------------------------------------------------------------------- 
+## -------------------------------------------------------------------------------- 
+## -------------------------------------------------------------------------------- 
 
-## ---------------------------------      W/O      ---------------------------------##
+## ---------------------------------      W/O      --------------------------------
 
-## -------------------------------------------------------------------------------- ##
-## -------------------------------------------------------------------------------- ##
-## -------------------------------------------------------------------------------- ##
+## -------------------------------------------------------------------------------- 
+## -------------------------------------------------------------------------------- 
+## -------------------------------------------------------------------------------- 
 
 
 
